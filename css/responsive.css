@@ -1,0 +1,135 @@
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+	/* navbar css */
+    header nav .container .navbar-links{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        background: coral;
+        transition: .5s all;
+    }
+
+    header nav .container .navbar-links li{
+        display: block;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+
+    header nav .container .bar-wrapper{
+        display: block;
+    }
+
+    #check:checked ~ .navbar-links{
+        right: 0;
+    }
+
+    .navbar-links li:hover{
+       border-radius: none;
+    }
+	
+    #quality .quality-child-wrapper .quality-child h3{
+        font-size: 30px;
+    }
+
+    #nature .nature-text{
+        padding: .5%;
+    }
+
+    #drone .drone-text-top h3{
+        font-size: 30px;
+    }
+
+    #nature .nature-text h3{
+        font-size: 30px;
+    }
+}
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+	
+    /* header text */
+    header .header-text{
+        padding: 166px 0px;
+        text-align: center;
+    }
+
+    /* quality */
+    #quality .quality-child-wrapper{
+       flex-direction: column;
+    }
+
+    #quality .quality-child-wrapper .quality-child{
+        margin-top: 60px;
+    }
+
+    #quality .quality-child-wrapper .quality-child h3{
+        font-size: 30px;
+    }
+    
+    #quality .quality-child-wrapper .quality-child:first-child{
+        margin-top: 0px;
+    }
+
+    #drone .drone-wrapper{
+        flex-direction: column;
+    }
+
+    #drone .drone-text-top h3{
+        font-size: 30px;
+    }
+        
+    #drone .drone-text-bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-gap: 1rem; */
+    }
+
+    #drone .drone-child:first-child {
+        order: 1;
+    }
+
+    #nature .nature-1{
+        flex-direction: column;
+    }
+
+    #nature .nature-2{
+        flex-direction: column;
+    }
+
+    #nature .nature-2 .nature-text{
+        order: 1;
+    }
+
+    #nature .nature-text{
+        padding: 50px  20px ;
+    }
+
+    #nature .nature-text h3{
+        font-size: 30px;
+    }
+
+    
+    #sign-up .container form{
+        width: 100%;
+    }
+
+    #sign-up .container h3{
+        font-size: 30px;
+    }
+    
+    
+}
